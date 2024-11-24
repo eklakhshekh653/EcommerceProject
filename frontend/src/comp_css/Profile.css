@@ -1,0 +1,103 @@
+
+.profile-container {
+  width: 70%;
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.updatePassword {
+  width: 30%;
+  margin: 40px;
+  border: 2px solid #f39c12;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fdf2e9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.updatePassword:hover {
+  background-color: #f8d40d; 
+  transform: scale(1.05);
+}
+
+.profile-details {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.profile-header {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.profile-details p {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.latest-address {
+  flex: 1;
+  border-left: 2px solid #3498db;
+  padding-left: 30px;
+}
+
+.latest-address-header {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.latest-address p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .updatePassword {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .profile-details,
+  .latest-address {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .profile-header {
+    font-size: 22px;
+  }
+
+  .profile-details p,
+  .latest-address p {
+    font-size: 16px;
+  }
+}

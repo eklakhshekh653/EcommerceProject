@@ -1,0 +1,104 @@
+
+.payment-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f9f9f9;
+}
+
+.payment-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 550px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.message.success {
+  background-color: #28a745;
+}
+
+.message.error {
+  background-color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .payment-form {
+    width: 90%;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
